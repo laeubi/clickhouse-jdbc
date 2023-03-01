@@ -71,6 +71,14 @@
             <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+    
+    <pluginRepositories>
+		<pluginRepository>
+			<id>bnd</id>
+			<snapshots><enabled>true</enabled></snapshots>
+			<url>https://bndtools.jfrog.io/bndtools/libs-snapshot-local</url>
+		</pluginRepository>
+	</pluginRepositories>
 
     <properties>
         <revision>0.3.3-SNAPSHOT</revision>
@@ -136,7 +144,7 @@
         <sonar.organization>clickhouse</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.projectVersion>0.3.3</sonar.projectVersion>
-        <bnd.version>6.4.0-SNAPSHOT</bnd.version>
+        <bnd.version>7.0.0-SNAPSHOT</bnd.version>
 		<!-- <bnd.version>6.3.0</bnd.version> -->
 	</properties>
 
